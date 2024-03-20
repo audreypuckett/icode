@@ -47,6 +47,12 @@
 									<a th:href="@{'/image/view/' + ${image.name} + '/negative'}" th:fileName="${image.name}"
 										id="btnView" title="View this image">View</a>
 								</td>
+<!--								<td>-->
+<!--									<form th:action="@{/image/delete}" method="post">-->
+<!--										<input type="number" th:value="${image.name}" name="id" hidden>-->
+<!--										<input type="submit" value="Delete">-->
+<!--									</form>-->
+<!--								</td>-->
 							</tr>
 						</tbody>
 					</table>
