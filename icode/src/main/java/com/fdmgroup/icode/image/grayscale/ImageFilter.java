@@ -20,6 +20,7 @@ public class ImageFilter {
 	public void grayscaleFilter(ImageInfo imageInfo) {
 		BufferedImage bufferedImage = utils.getBufferedImage(imageInfo);
 		// ******************** CODE BELOW ****************
+		//call getter method to get widht and heigh
 		 int width = bufferedImage.getWidth();
 	     	 int height = bufferedImage.getHeight();
 	     	//iterate over each pixel of the image
@@ -33,6 +34,7 @@ public class ImageFilter {
 		         //get RGB average values
 		         int Avg=(R+G+B)/3;
 		         int newRGB=(Avg<<16)|(Avg<<8)|Avg;
+			 //cal setter method to set new RGB value
 		         bufferedImage.setRGB(x, y, newRGB);
 		     }
 	         }
