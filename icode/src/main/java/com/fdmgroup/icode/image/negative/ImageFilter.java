@@ -45,7 +45,7 @@ public class ImageFilter {
 		utils.saveBufferedImage(bufferedImage, imageInfo.getSimpleName(), "negative");
 	}
 
-	public void deleteImageById(ImageInfo image) {
-		System.out.println(image.getName());
-	}
+//	public void deleteImageById(ImageInfo image) {
+//		System.out.println(image.getName());
+//	}
 }

@@ -39,9 +39,9 @@ public class NegativeController {
 		return redirectToImages;
 	}
 
-	@PostMapping("/delete")
-	public String deleteImageById(ImageInfo image) {
-		filter.deleteImageById(image);
-		return redirectToImages;
-	}
+//	@PostMapping("/delete")
+//	public String deleteImageById(ImageInfo image) {
+//		filter.deleteImageById(image);
+//		return redirectToImages;
+//	}
 }
