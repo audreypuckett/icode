@@ -1,5 +1,6 @@
 package com.fdmgroup.icode.image.negative;
 
+import com.fdmgroup.icode.demo.trails.TrailNotFoundException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.fdmgroup.icode.image.upload.model.ImageInfo;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping("/negative")
@@ -36,4 +38,10 @@ public class NegativeController {
 		filter.negativeFilter(image);
 		return redirectToImages;
 	}
+
+//	@PostMapping("/delete")
+//	public String deleteImageById(ImageInfo image) {
+//		filter.deleteImageById(image);
+//		return redirectToImages;
+//	}
 }
